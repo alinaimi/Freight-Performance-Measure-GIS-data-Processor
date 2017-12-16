@@ -28,6 +28,7 @@
 #include <sys/types.h>
 #include <fstream>
 #include "tz.h"
+#include "rec.h"
 #include "boost/date_time/posix_time/posix_time.hpp"
 #include <boost/signals2/signal.hpp>
 
@@ -43,6 +44,7 @@ db::db(){
 	concurentThreadsSupported = std::thread::hardware_concurrency();
 }
 
+// Initilize variables and objects
 db::structProgrs db::progrs = {};
 ullong db::length = 0;
 bool db::lock = false;
@@ -52,53 +54,12 @@ bool db::export_shp = true;
 bool db::export_separateDT = true;
 bool db::multithreaded_console_IO = true;
 bool db::applyDST = true;
+time_t tmt = {};
+int thr = {};
+struct tm tm_tmp = {};
+bool withinrng = true;
+bool yearIncluded = true;
 
-void db::find_minmax_fr_to(){
-	if (allRec.size() < 3) return;
-	time_t min = allRec[2].t,
-		max = allRec[2].t;
-
-	time_t sec_min3 = 2000000000;
-	time_t sec_max3 = 0;
-	time_t sec = 0;
-
-	for (rec i : allRec)
-	{
-		sec = i.t;
-		if (sec > 0){
-			if (sec_min3 > sec && sec > 0)
-			{
-				sec_min3 = sec;
-				min = i.t;
-			}
-			if (sec_max3 < sec)
-			{
-				sec_max3 = sec;
-				max = i.t;
-			}
-		}
-	}
-
-	_tm_fr_min = *localtime(&min);
-	_tm_to_max = *localtime(&max);
-
-	string strMin = std::asctime(&_tm_fr_min);
-	string strMax = std::asctime(&_tm_to_max);
-	SigMSG("min date/time: " + strMin + "max date/time: " + strMax);
-}
-
-void db::Set_fr(struct tm v)
-{
-	tm_fr = v;
-	_tm_fr_it = mktime(&v);
-	_dur = std::difftime(_tm_to_it, _tm_fr_it);
-}
-void db::Set_to(struct tm v)
-{
-	tm_to = v;
-	_tm_to_it = mktime(&v);
-	_dur = std::difftime(_tm_to_it, _tm_fr_it);
-}
 struct tm db::Get_fr() { return tm_fr; }
 struct tm db::Get_to() { return tm_fr; }
 time_t db::Get_fr_timet() { return _tm_fr_it; }
@@ -106,7 +67,38 @@ time_t db::Get_to_timet() { return _tm_to_it; }
 struct tm db::tm_fr_min(){ return _tm_fr_min; }
 struct tm db::tm_to_max(){ return _tm_to_max; }
 time_t db::dur(){ return _dur; }
+struct tm _tmtmp = {};
 
+// Decrypt the input data
+void db::char2tm(const char *ca_dt, time_t * t)
+{
+	_tmtmp.tm_year = -1900 + (ca_dt[0] - 48) * 1000 + (ca_dt[1] - 48) * 100 + (ca_dt[2] - 48) * 10 + (ca_dt[3] - 48);
+	_tmtmp.tm_mon = (ca_dt[5] - 48) * 10 + (ca_dt[6] - 48) - 1;
+	_tmtmp.tm_mday = (ca_dt[8] - 48) * 10 + (ca_dt[9] - 48);
+	_tmtmp.tm_hour = (ca_dt[11] - 48) * 10 + (ca_dt[12] - 48);
+	_tmtmp.tm_min = (ca_dt[14] - 48) * 10 + (ca_dt[15] - 48);
+	_tmtmp.tm_sec = (ca_dt[17] - 48) * 10 + (ca_dt[18] - 48);
+	_tmtmp.tm_isdst = 0;
+
+	timezone = 0; _timezone = 0;
+    *t = mktime(&_tmtmp);
+}
+
+void db::set_fr(struct tm v)
+{
+	tm_fr = v;
+	_tm_fr_it = mktime(&v);
+	_dur = std::difftime(_tm_to_it, _tm_fr_it);
+}
+
+void db::set_to(struct tm v)
+{
+	tm_to = v;
+	_tm_to_it = mktime(&v);
+	_dur = std::difftime(_tm_to_it, _tm_fr_it);
+}
+
+// Reset all objects
 void db::reset(){
 	progrs.cnt = 0;
 	iperv = 0;
@@ -166,27 +158,12 @@ int char2int(const char *c, int max_dig)
 			ret *= 10;
 			ret += (c[i] - 48);
 		}
-
 	}
 
 	return ret;
 }
 
-struct tm _tmtmp = {};
-void db::char2tm(const char *ca_dt, time_t * t)
-{
-	_tmtmp.tm_year = -1900 + (ca_dt[0] - 48) * 1000 + (ca_dt[1] - 48) * 100 + (ca_dt[2] - 48) * 10 + (ca_dt[3] - 48);// ca_dt[6]-'0';
-	_tmtmp.tm_mon = (ca_dt[5] - 48) * 10 + (ca_dt[6] - 48) - 1;
-	_tmtmp.tm_mday = (ca_dt[8] - 48) * 10 + (ca_dt[9] - 48);
-	_tmtmp.tm_hour = (ca_dt[11] - 48) * 10 + (ca_dt[12] - 48);
-	_tmtmp.tm_min = (ca_dt[14] - 48) * 10 + (ca_dt[15] - 48);
-	_tmtmp.tm_sec = (ca_dt[17] - 48) * 10 + (ca_dt[18] - 48);
-	_tmtmp.tm_isdst = 0;
-
-	timezone = 0; _timezone = 0;
-    *t = mktime(&_tmtmp);
-}
-
+// sort cmp
 void db::sortdb()
 {
 	std::sort(this->allRec.begin(), this->allRec.end(), before_key());
@@ -209,12 +186,6 @@ void db::chkinc_once(bool DoW[], bool MoY[], bool ToD[]){
 	}
 }
 
-time_t tmt = {};
-int thr = {};
-struct tm tm_tmp = {};
-bool withinrng = true;
-bool yearIncluded = true;
-
 void db::chkinc(bool * inc, rec * r)
 {
 	withinrng = true;
@@ -228,8 +199,6 @@ void db::chkinc(bool * inc, rec * r)
 	else
 		*inc = false;
 }
-
-
 
 string db::get_month_str() { return monthsNames[month]; }
 
@@ -247,6 +216,7 @@ void db::set_month(string m) {
 		cout << "Value of month is invalid" << endl;
 	}
 }
+
 void db::set_month(mnth monthvalue) {
 	try
 	{
@@ -276,16 +246,50 @@ const std::string currentDateTime() {
 	return buf;
 }
 
-#include <stdlib.h>
-#include "rec.h"
-#include "fn.h"
-
-int main2(int argc, char *argv[])
+int main_wrap(int argc, char *argv[])
 {
 	db db2;
 	return db2.maino(argc, argv);
 }
-int db::maino(int argc, char* argv[]) {
+
+
+// Find boundaries in the database 
+void db::find_minmax_fr_to(){
+	if (allRec.size() < 3) return;
+	time_t min = allRec[2].t,
+		max = allRec[2].t;
+
+	time_t sec_min3 = 2000000000;
+	time_t sec_max3 = 0;
+	time_t sec = 0;
+
+	for (rec i : allRec)
+	{
+		sec = i.t;
+		if (sec > 0){
+			if (sec_min3 > sec && sec > 0)
+			{
+				sec_min3 = sec;
+				min = i.t;
+			}
+			if (sec_max3 < sec)
+			{
+				sec_max3 = sec;
+				max = i.t;
+			}
+		}
+	}
+
+	_tm_fr_min = *localtime(&min);
+	_tm_to_max = *localtime(&max);
+
+	string strMin = std::asctime(&_tm_fr_min);
+	string strMax = std::asctime(&_tm_to_max);
+	SigMSG("min date/time: " + strMin + "max date/time: " + strMax);
+}
+
+// main application
+int db::main(int argc, char* argv[]) {
 
 	db db2;
 	db2.multithreaded_console_IO = false;
