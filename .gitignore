@@ -1,0 +1,2094 @@
+#!-------------------------- alireza naimi .git ignore -------------------------
+#!Notes:
+#!- appened # ==> ignore from BL
+#!- "/bin/": root only, "bin/": all dirs
+#!- to ignore only in git *.7z ==> *\.7z or *[.]7z or ...
+#!------------------------------------------------------------------------------
+
+#!--- Blacklist
+__MACOSX
+__pycache__/
+_chutzpah*
+_ncrunch_*
+_pkginfo.txt
+_pvt_extensions
+_resharper*/
+_teamcity*
+_upgradereport_files/
+!*.aren
+!*.asd
+!*.asm
+!*.bar
+!*.bas
+!*.bat
+!*.c
+!*.cc
+!*.cfg
+!*.cgi
+!*.class
+!*.cls
+!*.cmd
+!*.cnt
+!*.config
+!*.contact
+!*.cpp
+!*.crds
+!*.csl
+!*.css
+!*.ctl
+!*.def
+!*.h
+!*.hpp
+!*.ini
+!*.java
+!*.js
+!*.js?
+!*.m
+!*.mak
+!*.make
+!*.md
+!*.me
+!*.mk
+!*.opml
+!*.pas
+!*.php
+!*.php?
+!*.pro
+!*.ps1
+!*.qrc
+!*.qss
+!*.reg
+!*.sh
+!*.sql
+!*.ts
+!*.ui
+!*.url
+!*.vbs
+!addon/emu/*.
+!addon/emu/*.cmd
+!core/
+!data/user-data/User/*.json
+!makefile.
+.*.swp
+.*crunch*.local.xml
+.#*
+.assistant
+.atom
+.babelrc
+.builds
+.cache
+.changelog
+.cisco
+.conan
+.conda
+.cr/
+.designer
+.directory
+.docker
+.dropbox
+.ds_store
+.emscripten_cache
+.env.development.local
+.env.local
+.env.production.local
+.env.test.local
+.env#
+.eslintignore
+.eslintrc.js
+.eslintrc.json
+.fake/
+.gdal
+.gem
+.git
+.gitattributes
+.gitignore_
+.gnupg
+.history
+.history/
+.idea/
+.ionide
+.ionide/
+.justcode/
+.kube
+.lemminx
+.matplotlib
+.MCTranscodingSDK
+.mume
+.nbi
+.npm/
+.ntvs_analysis.dat
+.oit
+.omnisharp
+.openshot_qt
+.origin
+.paket/paket.exe
+.platformio
+.qgis
+.QtWebEngineProcess
+.quokka
+.sass-cache/
+.swt
+.thumbnails
+.tooling
+.travis.yml
+.VirtualBox
+.vs
+.vs-kubernetes
+.vs/
+.vscode/
+.vscode#
+.wallaby
+[usr_profile]/
+*_ar\.*
+*_bg\.*
+*_ca\.*
+*_cs\.*
+*_da\.*
+*_de\.*
+*_es\.*
+*_fi\.*
+*_fr\.*
+*_hu\.*
+*_i\.c
+*_i\.h
+*_it\.*
+*_ja\.*
+*_jp\.txt
+*_ko\.*
+*_lv\.*
+*_p\.c
+*_pch\.h\.cpp
+*_performance\.txt
+*_pl\.*
+*_problem\.txt
+*_pt\.*
+*_resource\.rc
+*_ridership\.txt
+*_ru\.*
+*_sk\.*
+*_sl\.*
+*_speed\.txt
+*_sv\.*
+*_uk\.*
+*_zh_??\.*
+*.kdev4
+*.orig
+*.out
+*.qmlc
+*.rej
+**/*\.desktopclient/generatedartifacts
+**/*\.desktopclient/modelmanifest.xml
+**/*\.htmlclient/generatedartifacts
+**/*\.min.js
+**/*\.server/generatedartifacts
+**/*\.server/modelmanifest.xml
+**/packages/*
+*\.!s
+*\.!ut
+*\.*#
+*\.$c
+*\.$s
+*\.000
+*\.001
+*\.1
+*\.16
+*\.2bp
+*\.2d
+*\.301
+*\.386
+*\.3dl
+*\.3ds
+*\.3fr
+*\.3gp
+*\.411
+*\.4bit
+*\.4bt
+*\.669
+*\.73i
+*\.7z
+*\.7zip
+*\.8?i
+*\.8be
+*\.8bf
+*\.8bi
+*\.8bx
+*\.8li
+*\.92i
+*\.a
+*\.a64
+*\.aac
+*\.abs
+*\.ac3
+*\.acc
+*\.accdb
+*\.ace
+*\.acm
+*\.acorn
+*\.acr
+*\.adf
+*\.adm
+*\.adm?
+*\.adt
+*\.adx
+*\.adz
+*\.af_za
+*\.afl
+*\.afs
+*\.afx
+*\.ai
+*\.aif
+*\.aipd
+*\.ait
+*\.alias
+*\.als
+*\.am_et
+*\.amf
+*\.ami
+*\.amr
+*\.ani
+*\.anv
+*\.apg
+*\.aph
+*\.apk
+*\.apm
+*\.apng
+*\.app
+*\.aps
+*\.apx
+*\.ar_sa
+*\.arc
+*\.arf
+*\.arj
+*\.arn
+*\.art
+*\.arw
+*\.asf
+*\.asx
+*\.atk
+*\.atr
+*\.att
+*\.au
+*\.au?
+*\.autosave
+*\.avc
+*\.avhd
+*\.avi
+*\.avs
+*\.avsz
+*\.avw
+*\.awd
+*\.ax
+*\.axf
+*\.az_az
+*\.azurepubxml
+*\.b
+*\.b_w
+*\.b&w
+*\.b16
+*\.b2d
+*\.b3d
+*\.bak
+*\.bak*
+*\.bay
+*\.bc!
+*\.be_by
+*\.bfl
+*\.bfli
+*\.bfx
+*\.bg_bg
+*\.bga
+*\.bie
+*\.bif
+*\.big
+*\.bik
+*\.bim_*.settings
+*\.bim.layout
+*\.bin
+*\.bld
+*\.blk
+*\.blp
+*\.bm
+*\.bmc
+*\.bmf
+*\.bmg
+*\.bmp
+*\.bms
+*\.bmx
+*\.bn
+*\.bna
+*\.bob
+*\.bpr
+*\.bpw
+*\.bpx
+*\.br2
+*\.brk
+*\.brt
+*\.bs
+*\.bs_ba
+*\.bsg
+*\.btn
+*\.build.csdef
+*\.bum
+*\.bup
+*\.bw
+*\.bwi
+*\.bwt
+*\.bx
+*\.bz2
+*\.bzip
+*\.c4
+*\.ca_es
+*\.cab
+*\.cache
+*\.cachefile
+*\.cad
+*\.cal
+*\.cals
+*\.cam
+*\.can
+*\.car
+*\.cat
+*\.cbm
+*\.ccd
+*\.cda
+*\.cdf
+*\.cdi
+*\.cdr
+*\.cdu
+*\.ce
+*\.ce?
+*\.cer
+*\.cert
+*\.cgm
+*\.ch
+*\.chk
+*\.chm
+*\.cin
+*\.cip
+*\.cit
+*\.clo
+*\.cloe
+*\.clp
+*\.cmp
+*\.cmt
+*\.cmu
+*\.cmx
+*\.com
+*\.core
+*\.cp?
+*\.cpio
+*\.cpl
+*\.cr2
+*\.crd
+*\.crg
+*\.crt
+*\.crw
+*\.crx
+*\.cs_cz
+*\.cs1
+*\.csf
+*\.cso
+*\.csr
+*\.csv_
+*\.csv?_
+*\.ct
+*\.ctf
+*\.cue
+*\.cur
+*\.cursor
+*\.cut
+*\.cvp
+*\.cy_gb
+*\.d64
+*\.da_dk
+*\.dae
+*\.dat
+*\.dax
+*\.db
+*\.db?
+*\.db2
+*\.db3
+*\.dbd
+*\.dbm
+*\.dbmdl
+*\.dbproj.schemaview
+*\.dc3
+*\.dcm
+*\.dcr
+*\.dcx
+*\.dd
+*\.dds
+*\.ddsx
+*\.de_de
+*\.debug
+*\.der
+*\.dfs
+*\.dib
+*\.dic
+*\.dicom
+*\.dis
+*\.divx
+*\.djv
+*\.djvu
+*\.dll
+*\.dll64
+*\.dlm
+*\.dln
+*\.dmb
+*\.dmf
+*\.dmg
+*\.dmp
+*\.dmskm*
+*\.dng
+*\.doc
+*\.doc?
+*\.dol
+*\.doo
+*\.dotcover
+*\.dotsettings.user
+*\.dpx
+*\.drv
+*\.drw
+*\.drz
+*\.ds_store
+*\.dsi
+*\.dsk
+*\.dta
+*\.dtapart
+*\.dvd
+*\.dvr-ms
+*\.dwf
+*\.dwg
+*\.dwt
+*\.dxf
+*\.dylib 
+*\.ecc
+*\.ecw
+*\.edb
+*\.ef3
+*\.efx
+*\.ei
+*\.eidi
+*\.eif
+*\.el_gr
+*\.emf
+*\.emz
+*\.en_au
+*\.en_nz
+*\.epa
+*\.epi
+*\.eps
+*\.epsf
+*\.ept
+*\.erf
+*\.eri
+*\.es_??
+*\.es_ar
+*\.esm
+*\.et_ee
+*\.eu_es
+*\.exe
+*\.exr
+*\.f4v
+*\.f96
+*\.fa_??
+*\.fac
+*\.face
+*\.fax
+*\.fbl
+*\.fbm
+*\.fcx
+*\.fdd
+*\.feed-ms
+*\.fff
+*\.fh10
+*\.fh11
+*\.fh5
+*\.fh7
+*\.fh8
+*\.fh9
+*\.fi
+*\.fi_fi
+*\.fif
+*\.fit
+*\.fits
+*\.flac
+*\.flc
+*\.flc*
+*\.fli
+*\.flp
+*\.flt
+*\.flv
+*\.fmf
+*\.fnt
+*\.fo_fo
+*\.fon
+*\.fp2
+*\.fpg
+*\.fpr
+*\.fpt
+*\.fpx
+*\.fr_??
+*\.fre
+*\.frm
+*\.fsh
+*\.fss
+*\.fsy
+*\.ft11
+*\.ftf
+*\.fts
+*\.fun
+*\.fx?
+*\.g16
+*\.g3
+*\.g3n
+*\.g4
+*\.gadget
+*\.gaf
+*\.gb
+*\.gba
+*\.gbc
+*\.gbr
+*\.gdb/
+*\.gdp
+*\.gem
+*\.geo
+*\.geojson
+*\.getright
+*\.gg
+*\.gho
+*\.ghostdoc.xml
+*\.gid
+*\.gif
+*\.giff
+*\.gig
+*\.gih
+*\.gl_es
+*\.gl2
+*\.gm
+*\.gm2
+*\.gm4
+*\.gmf
+*\.gmi
+*\.gn
+*\.gnd
+*\.gom
+*\.gp4
+*\.gpi
+*\.gpkg*
+*\.gpstate
+*\.gpx
+*\.grb
+*\.grey
+*\.gro
+*\.gro2
+*\.gro4
+*\.grx
+*\.gry
+*\.gtx
+*\.gun
+*\.gz
+*\.gzip
+*\.ha
+*\.hbm
+*\.hdd
+*\.hdp
+*\.hdr
+*\.hdri
+*\.hdru
+*\.he_il
+*\.hed
+*\.heic
+*\.heif
+*\.hex
+*\.hf
+*\.hgl
+*\.hi_in
+*\.hir
+*\.hlp
+*\.hp
+*\.hpg
+*\.hpgl
+*\.hpgl2
+*\.hpi
+*\.hr
+*\.hr_hr
+*\.hru
+*\.hrz
+*\.hta
+*\.hu_hu
+*\.hy_am
+*\.i17
+*\.i18
+*\.ia
+*\.ib_pdb_index
+*\.ib7
+*\.ibg
+*\.ic?
+*\.icb
+*\.icl
+*\.icn
+*\.icns
+*\.ico
+*\.icon
+*\.id_id
+*\.idb
+*\.idc
+*\.if?
+*\.iff
+*\.ifo
+*\.iim
+*\.iimg
+*\.ilbm
+*\.ilk
+*\.im
+*\.im?
+*\.ima
+*\.img
+*\.info
+*\.int
+*\.inta
+*\.ioca
+*\.ip?
+*\.ipa
+*\.ipch
+*\.iris
+*\.is_is
+*\.ish
+*\.ism
+*\.iso
+*\.iss
+*\.isz
+*\.it
+*\.it_it
+*\.ita
+*\.itg
+*\.ithmb
+*\.ivb
+*\.ivr
+*\.iw4
+*\.iw44
+*\.iwc
+*\.j
+*\.j2c
+*\.j2k
+*\.j6i
+*\.ja
+*\.ja_jp
+*\.jad
+*\.jar
+*\.jb2
+*\.jbf
+*\.jbg
+*\.jbig
+*\.jbr
+*\.jfif
+*\.jfm
+*\.jgw
+*\.jif
+*\.jig
+*\.jj
+*\.jls
+*\.jng
+*\.jp?
+*\.jp2
+*\.jpc
+*\.jpe
+*\.jpeg
+*\.jpf
+*\.jpg
+*\.jps
+*\.jpx
+*\.jtf
+*\.jxr
+*\.k25
+*\.k3g
+*\.kap
+*\.kdc
+*\.keystore
+*\.kfx
+*\.kla
+*\.kln
+*\.kmz
+*\.ko_kr
+*\.koa
+*\.kpl
+*\.kps
+*\.kqp
+*\.kro
+*\.la
+*\.laccdb
+*\.lai
+*\.language.eo
+*\.language.mi
+*\.lastbuild*
+*\.lbm
+*\.lda
+*\.ldf
+*\.lff
+*\.lha
+*\.lib
+*\.lif
+*\.lin
+*\.list
+*\.lmp4
+*\.lng
+*\.lo
+*\.loc
+*\.lock
+*\.log
+*\.lrg
+*\.lsm
+*\.lss
+*\.lsx
+*\.lt_lt
+*\.lv_lv
+*\.lvp
+*\.lwf
+*\.lwi
+*\.lwo
+*\.lyr
+*\.lzh
+*\.m1v
+*\.m2t
+*\.m2ts
+*\.m2v
+*\.m3u
+*\.m3u8
+*\.m4a
+*\.m4v
+*\.m8
+*\.mac
+*\.macp
+*\.mag
+*\.map
+*\.mat
+*\.max
+*\.mbfavs
+*\.mbfs
+*\.mbm
+*\.mdb
+*\.mdf
+*\.mdl
+*\.mds
+*\.mdx
+*\.med
+*\.mef
+*\.meta
+*\.mgr
+*\.mh
+*\.mht
+*\.mic
+*\.mid
+*\.midi
+*\.mif
+*\.miff
+*\.mil
+*\.mix
+*\.mk_mk
+*\.mkv
+*\.ml_in
+*\.mm.*
+*\.mmf
+*\.mmo
+*\.mn_mn
+*\.mng
+*\.moc
+*\.mod
+*\.mos
+*\.mov
+*\.mp2
+*\.mp3
+*\.mp4
+*\.mpa
+*\.mpc
+*\.mpe
+*\.mpeg
+*\.mpg
+*\.mph
+*\.mpnt
+*\.mpo
+*\.mpq
+*\.mps
+*\.mpv
+*\.mqv
+*\.mrc
+*\.mrf
+*\.mrw
+*\.ms_my
+*\.msi
+*\.msk
+*\.msp
+*\.msstyles
+*\.mt_mt
+*\.mt2
+*\.mtl
+*\.mtm
+*\.mts
+*\.mtt
+*\.mtv
+*\.mtx
+*\.mui
+*\.mxd
+*\.mxf
+*\.my_mm
+*\.navmap
+*\.nb_no
+*\.nb0
+*\.nbh
+*\.ncb
+*\.ncd
+*\.ncr
+*\.nct
+*\.ncy
+*\.nds
+*\.nef
+*\.neo
+*\.nes
+*\.net
+*\.ngg
+*\.nitf
+*\.nl_nl
+*\.nlm
+*\.NLS
+*\.nol
+*\.npm
+*\.nrg
+*\.nsr
+*\.nsv
+*\.ntf
+*\.nth
+*\.nuget.props
+*\.nuget.targets
+*\.nupkg
+*\.nvm
+*\.o
+*\.oaz
+*\.obj
+*\.ocp
+*\.ocx
+*\.oex
+*\.ofx
+*\.ogf2
+*\.ogg
+*\.ogm
+*\.oil
+*\.okm
+*\.OLB
+*\.old
+*\.opendb
+*\.opensdf
+*\.opt
+*\.orf
+*\.org
+*\.orig
+*\.otb
+*\.ovl
+*\.ovr
+*\.ozf2
+*\.ozfx3
+*\.p12
+*\.p2
+*\.p64
+*\.p7
+*\.p7b
+*\.pac
+*\.pack
+*\.paint
+*\.pak
+*\.pan
+*\.par
+*\.part
+*\.pat
+*\.pax
+*\.pbm
+*\.pbt
+*\.pc?
+*\.pcd
+*\.pch
+*\.pct
+*\.pcx
+*\.pd
+*\.pdb
+*\.pdd
+*\.pdf
+*\.pdi
+*\.pds
+*\.pdx
+*\.pe4
+*\.pef
+*\.pem
+*\.pfi
+*\.pfr
+*\.pfx
+*\.pg
+*\.pg?
+*\.pgm
+*\.pgw
+*\.ph
+*\.php
+*\.pi
+*\.pi?
+*\.pic
+*\.picio
+*\.pict
+*\.pict2
+*\.pidb
+*\.pix
+*\.pixar
+*\.pkcs12
+*\.pkg
+*\.pl_pl
+*\.plb
+*\.plg
+*\.plg64
+*\.plist
+*\.pls
+*\.plt
+*\.pm
+*\.pmg
+*\.pmp
+*\.png
+*\.pnm
+*\.pnt
+*\.pntg
+*\.poi
+*\.pp4
+*\.pp5
+*\.ppm
+*\.ppma
+*\.ppp
+*\.pps
+*\.ppt
+*\.ppt?
+*\.pr
+*\.prc
+*\.prf
+*\.pri
+*\.prj
+*\.prl
+*\.prn
+*\.pro.user
+*\.pro.user.*
+*\.pro.user*
+*\.prt
+*\.ps
+*\.ps?
+*\.psd
+*\.psess
+*\.psp
+*\.pspbrush
+*\.pspframe
+*\.pspimage
+*\.pspmask
+*\.psptube
+*\.pst
+*\.psz
+*\.pt_br
+*\.pt_pt
+*\.ptg
+*\.ptm
+*\.pts
+*\.ptt
+*\.publish.xml
+*\.publishproj
+*\.publishsettings
+*\.pubxml###
+*\.pwc
+*\.pwp
+*\.px?
+*\.pxr
+*\.pyc
+*\.pyo
+*\.pzl
+*\.pzp
+*\.q0
+*\.qbs\.user
+*\.qbs\.user.*
+*\.qch
+*\.qct
+*\.qdv
+*\.qgs
+*\.qm
+*\.qmlproject.user
+*\.qmlproject.user.*
+*\.qpj
+*\.qrt
+*\.qt
+*\.qti
+*\.qtif
+*\.qtl
+*\.ra
+*\.ra*
+*\.rad
+*\.raf
+*\.ram
+*\.rar
+*\.ras
+*\.rast
+*\.raw
+*\.rc
+*\.rdc
+*\.rdl.data
+*\.rdr
+*\.rej
+*\.release
+*\.res
+*\.resharper
+*\.rfa
+*\.rgb
+*\.rgba
+*\.rgh
+*\.ri?
+*\.rl?
+*\.rle
+*\.rm
+*\.rmi
+*\.rmm
+*\.rmvb
+*\.rmx
+*\.ro_ro
+*\.rom
+*\.rp
+*\.rpbm
+*\.rpf
+*\.rpgm
+*\.rpm
+*\.rpnm
+*\.rppm
+*\.rpx
+*\.rs
+*\.rsb
+*\.rsc
+*\.rsp
+*\.rsrc
+*\.rt2
+*\.rte
+*\.rtf
+*\.ru_ru
+*\.rv
+*\.rvu
+*\.rw2
+*\.rwz
+*\.rxf
+*\.s?db
+*\.s2db
+*\.s3db
+*\.s3m
+*\.s3w
+*\.sap
+*\.sar
+*\.sbn
+*\.sbr
+*\.sbx
+*\.sc?
+*\.sd?
+*\.sdb
+*\.sdf
+*\.sdg
+*\.sdt
+*\.sdw
+*\.seq
+*\.sfd
+*\.sff
+*\.sfw
+*\.sfx
+*\.sgi
+*\.shp
+*\.shx
+*\.si
+*\.si_lk
+*\.sid
+*\.sif
+*\.sim
+*\.sir
+*\.sis
+*\.sisx
+*\.sj1
+*\.sk_sk
+*\.skb
+*\.skf
+*\.skm
+*\.skn
+*\.skp
+*\.sl_si
+*\.sl?
+*\.sl2
+*\.sl3
+*\.sln
+*\.sln.docstates
+*\.sln.iml
+*\.slo
+*\.smd
+*\.smil
+*\.smp
+*\.sna
+*\.snd
+*\.so
+*\.so.*
+*\.spc
+*\.spf
+*\.spl
+*\.spr
+*\.sps
+*\.spu
+*\.sq_al
+*\.sqlite
+*\.sqlite?
+*\.sqlite2
+*\.sqlite3
+*\.sr
+*\.sr_rs
+*\.sr_rs@latin
+*\.sr2
+*\.srf
+*\.ssi
+*\.ssp
+*\.sst
+*\.st?
+*\.stm
+*\.sul
+*\.sun
+*\.suniff
+*\.suo
+*\.sv_se
+*\.sv2i
+*\.svclog
+*\.svg
+*\.svgz
+*\.svi
+*\.svm
+*\.swf
+*\.swf*
+*\.swp
+*\.syj
+*\.syn
+*\.synu
+*\.sys
+*\.szl
+*\.t1
+*\.t2
+*\.t64
+*\.ta_in
+*\.taac
+*\.tap
+*\.tar
+*\.targa
+*\.tdi
+*\.tdim
+*\.te_in
+*\.tex
+*\.tfw
+*\.tg_tj
+*\.tg4
+*\.tga
+*\.tgz
+*\.th_th
+*\.thb
+*\.themepack
+*\.thm
+*\.tib
+*\.tif
+*\.tiff
+*\.til
+*\.tile
+*\.tim
+*\.tjp
+*\.tlb
+*\.tlh
+*\.tli
+*\.tlog
+*\.tm2
+*\.tmp
+*\.tmp_proj
+*\.tn?
+*\.tnl
+*\.tny
+*\.torrent
+*\.tp
+*\.tr_tr
+*\.tr3
+*\.trb
+*\.trd
+*\.trips
+*\.trp
+*\.ts_
+*\.tsk
+*\.tsp
+*\.tsv_
+*\.tt
+*\.ttf
+*\.tub
+*\.txf
+*\.uc2
+*\.uha
+*\.uk_ua
+*\.umx
+*\.uni
+*\.upi
+*\.upt
+*\.urt
+*\.user
+*\.userosscache
+*\.userprefs
+*\.usr
+*\.uue
+*\.uw?x
+*\.uyvy
+*\.uz_uz
+*\.v
+*\.v2i
+*\.v64
+*\.var
+*\.vbx
+*\.vc
+*\.vc.db
+*\.vc.vc.opendb
+*\.vc4
+*\.vcd
+*\.vcproj
+*\.vcxproj
+*\.vda
+*\.vfd
+*\.vff
+*\.vfx
+*\.vga
+*\.vhd
+*\.vhdx
+*\.vi
+*\.vi_vn
+*\.vic
+*\.vicar
+*\.vid
+*\.vif
+*\.viff
+*\.visualstate.xml
+*\.vit
+*\.vmdk
+*\.vob
+*\.voc
+*\.vpb
+*\.vsp
+*\.vspscc
+*\.vspx
+*\.vssscc
+*\.vst
+*\.vxd
+*\.w?x
+*\.w?x64
+*\.wad
+*\.wal
+*\.wap
+*\.wav
+*\.wax
+*\.wb?
+*\.wbk
+*\.wbm
+*\.wbmp
+*\.wcx
+*\.wcx64
+*\.wdp
+*\.wdx
+*\.wdx64
+*\.webm
+*\.webp
+*\.wep
+*\.wfx
+*\.wfx64
+*\.wgt
+*\.wic
+*\.wim
+*\.wlm
+*\.wlx
+*\.wlx64
+*\.wm
+*\.wma
+*\.wmf
+*\.wmp
+*\.wmv
+*\.wmx
+*\.wmz
+*\.wpb
+*\.wpg
+*\.wpl
+*\.wpt
+*\.wpv
+*\.wrl
+*\.wsq
+*\.wsz
+*\.wtv
+*\.wvx
+*\.wzl
+*\.x
+*\.x11
+*\.x3f
+*\.xar
+*\.xbm
+*\.xcf
+*\.xfx
+*\.xif
+*\.xim
+*\.xls
+*\.xls?
+*\.xltx
+*\.xm
+*\.xp0
+*\.xpi
+*\.xpm
+*\.xsl
+*\.xslt
+*\.xv
+*\.xvid
+*\.xwd
+*\.xyz
+*\.ypc
+*\.yuv
+*\.zbr
+*\.zh_??
+*\.zh-??
+*\.zip
+*\.zmf
+*\.zoo
+*\.zpaq
+*~
+*AlbumArt_{*\.jpg
+*build-*
+*ChangeLog\.txt
+*license\.*
+*vcproj\.*.*.user
+*vcxproj\.*
+*whatsnew.txt
+/.changelog
+/.idea/
+/.qmake.cache
+/.qmake.stash
+/build
+/coverage
+/dist
+/ini/history/
+/thumbs/
+/usr_data_/
+/venv/
+\.fseventsd
+\.HPIMAGE.VFS
+\.Spotlight-V100
+\.Trashes
+\\\WinCE Device\Storage Card\.HPIMAGE.VFS
+\\\WinCE Device\Storage Card\PPInfo.xml
+\\\WinCE Device\UploadHistory.vol
+\##attributes.ini
+\$AVG
+\$RECYCLE.BIN
+\$Windows.~BT
+\0PE
+\4ext
+\Alarms
+\All Users
+\amazonmp3
+\AMD
+\AppGame
+\ASUS.000
+\ASUS.DAT
+\ASUS.SYS
+\ATI
+\Aura
+\autoexec.bat
+\AUTORUN.CMD
+\autorun.inf
+\badgrub.exe
+\BIOS
+\BIOS.BIN
+\BOKFM
+\boo.mgr
+\boost_1_55_0
+\boot
+\boot.images
+\boot.ini
+\BOOTEX.LOG
+\BOOTFONT.BIN
+\BOOTICE.EXE
+\bootlace.com
+\bootmgr
+\BOOTNXT
+\bootsect.bak
+\bootsect.bin
+\Brother
+\C_VOL.spf
+\cache
+\CANONMSC
+\cities
+\ckis
+\config.msi
+\config.sys
+\DEBUG.TXT
+\Default
+\Default User
+\dell
+\dell.sdr
+\Desktop
+\devlist.txt
+\Documents and Settings
+\Documents and Settings\anaimi\My Documents\Dropbox\.dropbox.cache
+\Documents;
+\drecovery
+\Driver
+\DRIVERS
+\dvmexp
+\EULA
+\eula.????.txt
+\Favorites
+\flexlm
+\found.000
+\G60Jx_WIN7.10
+\gameloft
+\geico
+\Genesis
+\Go
+\GOLauncherEX
+\GoldenDict
+\GoStore
+\GoTheme
+\GOWeatherEX
+\grldr
+\grldr.mbr
+\grub.exe
+\gs
+\hiberfil.sys
+\HIR Logs
+\hmload.com
+\Hotspot Shield
+\hp
+\I386
+\install.res.????.dll
+\Installs
+\Intel
+\io.sys
+\IPH.PH
+\lazy
+\LazyList
+\Lenovo
+\Libraries
+\LINE_Backup
+\LINEcamera
+\LOST.DIR
+\memstick.ind
+\menu.lst
+\MinGW
+\mingw-w64
+\msdos.sys
+\msocache
+\mstk_pro.ind
+\MSVC
+\msys
+\NALVC
+\Notifications
+\ntdetect.com
+\ntldr
+\NVIDIA
+\ooVooCache
+\osmand
+\pagefile.sys
+\paint
+\Pass.txt
+\pb
+\PerfLogs
+\pmagic.iso
+\Podcasts
+\Program Files (x86);
+\Program Files (x86)\Adobe
+\Program Files (x86)\Adobe Media Player
+\Program Files (x86)\AGEIA Technologies
+\Program Files (x86)\AOL
+\Program Files (x86)\Apple Software Update
+\Program Files (x86)\ASUS
+\Program Files (x86)\Atheros
+\Program Files (x86)\ATI
+\Program Files (x86)\ATI Technologies
+\Program Files (x86)\AviSynth 2.5
+\Program Files (x86)\Babylon
+\Program Files (x86)\Bonjour
+\Program Files (x86)\Common Files
+\Program Files (x86)\Creative
+\Program Files (x86)\Creative Installation Information
+\Program Files (x86)\CyberLink
+\Program Files (x86)\DAEMON Tools Pro
+\Program Files (x86)\Dell
+\Program Files (x86)\Dell DataSafe Local Backup
+\Program Files (x86)\Dell Digital Delivery
+\Program Files (x86)\Dell Stage
+\Program Files (x86)\DivX
+\Program Files (x86)\Document
+\Program Files (x86)\eBay
+\Program Files (x86)\ESRI
+\Program Files (x86)\Free download Manager
+\Program Files (x86)\Google
+\Program Files (x86)\Hewlett-Packard
+\Program Files (x86)\HP
+\Program Files (x86)\HTML Help Workshop
+\Program Files (x86)\IIS
+\Program Files (x86)\IIS Express
+\Program Files (x86)\InstallShield Installation Information
+\Program Files (x86)\Intel
+\Program Files (x86)\Internet download Manager
+\Program Files (x86)\Internet Explorer
+\Program Files (x86)\ITE
+\Program Files (x86)\iTunes
+\Program Files (x86)\Java
+\Program Files (x86)\K-Lite Codec Pack
+\Program Files (x86)\Kaspersky Lab
+\Program Files (x86)\LastPass
+\Program Files (x86)\McAfee
+\Program Files (x86)\mcafee.com
+\Program Files (x86)\Microsoft Analysis Services
+\Program Files (x86)\Microsoft ASP.NET
+\Program Files (x86)\Microsoft DirectX SDK*
+\Program Files (x86)\Microsoft F#
+\Program Files (x86)\Microsoft Games
+\Program Files (x86)\Microsoft Games for Windows - LIVE
+\Program Files (x86)\Microsoft Office
+\Program Files (x86)\Microsoft SDKs
+\Program Files (x86)\Microsoft Security Client
+\Program Files (x86)\Microsoft Silverlight
+\Program Files (x86)\Microsoft SQL Server*
+\Program Files (x86)\Microsoft Synchronization Services
+\Program Files (x86)\Microsoft Visual Studio*
+\Program Files (x86)\Microsoft WCF Data Services
+\Program Files (x86)\Microsoft Web Tools
+\Program Files (x86)\Microsoft Works
+\Program Files (x86)\Microsoft.NET
+\Program Files (x86)\MiniLyrics   
+\Program Files (x86)\Mozilla Firefox
+\Program Files (x86)\MSBuild
+\Program Files (x86)\MSXML 4.0
+\Program Files (x86)\NCH Software
+\Program Files (x86)\NCH Swift Sound
+\Program Files (x86)\Nero
+\Program Files (x86)\Nevron Software
+\Program Files (x86)\Nokia
+\Program Files (x86)\NVIDIA Corporation
+\Program Files (x86)\OpenAL
+\Program Files (x86)\Origin
+\Program Files (x86)\PC Connectivity Solution
+\Program Files (x86)\PdaNet for iPhone
+\Program Files (x86)\QuickTime
+\Program Files (x86)\Reference Assemblies
+\Program Files (x86)\Roxio
+\Program Files (x86)\SafeConnect
+\Program Files (x86)\SHARP
+\Program Files (x86)\Skype
+\Program Files (x86)\Symantec
+\Program Files (x86)\TeamViewer
+\Program Files (x86)\TrustedID
+\Program Files (x86)\Uninstall Information
+\Program Files (x86)\uTorrent
+\Program Files (x86)\uTorrentControl_v2
+\Program Files (x86)\Viewpoint
+\Program Files (x86)\VMware
+\Program Files (x86)\Windows Defender
+\Program Files (x86)\Windows Live
+\Program Files (x86)\Windows Mail
+\Program Files (x86)\Windows Media Player
+\Program Files (x86)\Windows Multimedia Platform
+\Program Files (x86)\Windows NT
+\Program Files (x86)\Windows Photo Viewer
+\Program Files (x86)\Windows Portable Devices
+\Program Files (x86)\Windows Sidebar
+\Program Files (x86)\Windows Virtual PC
+\Program Files (x86)\Xenocode
+\Program Files (x86)\Yahoo!
+\Program Files\Adobe
+\Program Files\Adobe Media Player
+\Program Files\AGEIA Technologies
+\Program Files\Apoint2K
+\Program Files\Apple Software Update
+\Program Files\ASUS
+\Program Files\ATI
+\Program Files\ATI Technologies
+\Program Files\ATKGFNEX
+\Program Files\AutoCAD 2010
+\Program Files\Autodesk
+\Program Files\AVG
+\Program Files\AviSynth 2.5
+\Program Files\Babylon
+\Program Files\BitLocker
+\Program Files\Bonjour
+\Program Files\Broadcom
+\Program Files\Bullzip
+\Program Files\Business Objects
+\Program Files\CE Remote Tools
+\Program Files\Common Files
+\Program Files\CONEXANT
+\Program Files\Creative
+\Program Files\CyberLink
+\Program Files\DAEMON Tools Pro
+\Program Files\Dell Inc
+\Program Files\dell stage
+\Program Files\Dell Support Center
+\Program Files\DivX
+\Program Files\DVD Maker
+\Program Files\ESET
+\Program Files\Frontline Systems
+\Program Files\GIGABYTE
+\Program Files\Google
+\Program Files\gs
+\Program Files\Hewlett-Packard
+\Program Files\HP
+\Program Files\HTML Help Workshop
+\Program Files\IIS
+\Program Files\IIS Express
+\Program Files\InstallShield Installation Information
+\Program Files\Intel
+\Program Files\Internet Explorer
+\Program Files\iPod
+\Program Files\iTunes
+\Program Files\IVT Corporation
+\Program Files\Java
+\Program Files\K-Lite Codec Pack
+\Program Files\Kaspersky Lab
+\Program Files\KLCP64
+\Program Files\LastPass
+\Program Files\Launch Manager
+\Program Files\Lavalys
+\Program Files\Linksys
+\Program Files\MATLAB
+\Program Files\McAfee
+\Program Files\McAfee.com
+\Program Files\Microsoft
+\Program Files\Microsoft ActiveSync
+\Program Files\Microsoft Analysis Services
+\Program Files\Microsoft Device Emulator
+\Program Files\Microsoft DirectX SDK (April 2007)
+\Program Files\Microsoft Games for Windows - LIVE
+\Program Files\Microsoft Help Viewer
+\Program Files\Microsoft Office
+\Program Files\Microsoft Office Outlook Connector
+\Program Files\Microsoft Phone Data Manager
+\Program Files\Microsoft SDKs
+\Program Files\Microsoft Security Client
+\Program Files\Microsoft Silverlight
+\Program Files\Microsoft SQL Server
+\Program Files\Microsoft SQL Server Compact Edition
+\Program Files\Microsoft Sync Framework
+\Program Files\Microsoft Synchronization Services
+\Program Files\Microsoft Visual Studio 11.0
+\Program Files\Microsoft Visual Studio*
+\Program Files\Microsoft Web Designer Tools
+\Program Files\Microsoft Works
+\Program Files\Microsoft.NET
+\Program Files\Movie Maker
+\Program Files\MSBuild
+\Program Files\MSDN
+\Program Files\MSECache
+\Program Files\MSN
+\Program Files\MSXML 4.0
+\Program Files\MySQL
+\Program Files\NetLimiter 3
+\Program Files\Nokia
+\Program Files\NVIDIA Corporation
+\Program Files\Oracle
+\Program Files\P4G
+\Program Files\PC Connectivity Solution
+\Program Files\QuickTime
+\Program Files\Realtek
+\Program Files\Reference Assemblies
+\Program Files\Roxio
+\Program Files\SiteAdvisor
+\Program Files\Sony
+\Program Files\SRS Labs
+\Program Files\Steam
+\Program Files\Symantec
+\Program Files\Synaptics
+\Program Files\Uninstall Information
+\Program Files\Unlocker
+\Program Files\Valve
+\Program Files\Virtual Windows XP
+\Program Files\WebMoney
+\Program Files\WebMoney Advisor
+\Program Files\WebMoney Agent
+\Program Files\WIDCOMM
+\Program Files\Win7codecs
+\Program Files\Windows Calendar
+\Program Files\Windows Collaboration
+\Program Files\Windows Defender
+\Program Files\Windows Journal
+\Program Files\Windows Live*
+\Program Files\Windows Mail
+\Program Files\Windows Media Player
+\Program Files\Windows Multimedia Platform
+\Program Files\Windows NT
+\Program Files\Windows Photo Gallery
+\Program Files\Windows Photo Viewer
+\Program Files\Windows Portable Devices
+\Program Files\Windows Sidebar
+\Program Files\Windows Virtual PC
+\Program Files\Windows XP Mode
+\Program Files\WindowsApps
+\Program Files\WindowsUpdate
+\Program Files\WinPcap
+\Program Files\WinRAR
+\Program Files\XnView
+\Program Files\Yahoo!
+\Program Files\Yamicsoft
+\ProgramData
+\Public\Desktop
+\Public\Documents
+\Public\Music
+\Public\Pictures
+\Public\Videos
+\Python
+\Python2?
+\Python3?
+\QSTART.000
+\QSTART.SYS
+\Qt
+\qtracker-master2.log
+\QUARANTINE
+\README_GRUB4DOS.txt
+\Recorded TV
+\Recovery
+\RECOVERY.DAT
+\recycler
+\rent.com
+\Ringtones
+\rmaps
+\romtoolbox
+\Ruby200
+\SkyDriveTemp
+\smvvm
+\splash.idx
+\SumHidd.txt
+\SumOS.txt
+\SUPPORT
+\svtp.ld
+\swapfile.sys
+\swsetup
+\SWTOOLS
+\System Recovery
+\System Volume Information
+\system.sav
+\telenav70
+\temp
+\tmp
+\treeinfo.wc
+\ubcd.iso
+\uniextract_temp.txt
+\uniextract.txt
+\urbanspoon
+\usbgis 
+\UserGuidePDF
+\Users\Admin\Dropbox\.dropbox.cache
+\Users\Admin\ntuser.dat
+\Users\alire\.*
+\Users\alire\contacts
+\Users\alire\Saved Games
+\Users\alire\Searches
+\Users\alire\Videos
+\Users\All Users
+\Users\Classic .NET AppPool
+\Users\Default
+\Users\Default User
+\Users\NTUser.dat
+\Users\NTUser.dat{*}.*.regtrans-ms
+\Users\NTUser.dat{*}.TM.blf
+\Users\Public\Desktop
+\Users\Public\Documents
+\Users\Public\downloads
+\Users\Public\Favorites
+\Users\Public\Libraries
+\Users\Public\Music
+\Users\Public\NTUSER.DAT*
+\Users\Public\Pictures
+\Users\Public\Recorded TV
+\Users\Public\Videos
+\Users\usr\*.conf
+\Users\usr\*.log*
+\Users\usr\AppData\Local\Google\Chrome\User Data\Default\Cache\data_?
+\Users\usr\AppData\Local\Google\Chrome\User Data\Default\Cache\index
+\Users\usr\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\index.dat
+\Users\usr\AppData\Local\Mozilla\Firefox\Profiles\AliN.default\Cache\_CACHE_???_
+\Users\usr\Application Data
+\Users\usr\Documents\ASUS
+\Users\usr\Documents\BlazeVideo
+\Users\usr\Documents\Casio
+\Users\usr\Documents\CyberLink
+\Users\usr\Documents\My Music
+\Users\usr\Documents\My Phone Booth
+\Users\usr\Documents\My Pictures
+\Users\usr\Documents\My Videos
+\Users\usr\Documents\Outlook Files
+\Users\usr\Documents\Talk
+\Users\usr\Documents\The KMPlayer
+\Users\usr\Documents\Visual Studio*
+\Users\usr\Dropbox\.dropbox.cache
+\Users\usr\Local Settings
+\Users\usr\My Documents
+\Users\usr\NetHood\
+\Users\usr\NTUSER.DAT*
+\Users\usr\ntuser.ini
+\Users\usr\PrintHood\
+\Users\usr\PUTTY.RND
+\Users\usr\Searches\
+\Users\usr\Templates
+\USR
+\v82.txt
+\VALUEADD
+\vc_red.cab
+\vc_red.msi
+\version
+\viber
+\Videos
+\Vonage
+\VPlayer
+\VProRecovery
+\wamp
+\WATCOM
+\win7.ld
+\winnt.sif
+\winv.ld
+\WMDRM
+\xampp
+\XCUMV
+\Yahoo!
+# --- whitelist
+# !*.cache/
+# !**/packages/build/
+# !**/packages/repositories.config
+# !**/packages/repositories.config###
+# !*/
+# !/addon/sci/coding/
+# !/addon/sci/coding/*.cmd
+# !/ini/history/
+# !/ini/history/*.ini
+# bower_components/
+# exceptions:
+# wwwroot/
+~$*
+~h*.*
+$tf/
+addon/emu/*
+afrikaans.*
+albanian.*
+AlbumArtSmall.jpg
+am.*
+amharic.*
+apppackages/
+ar.*
+arabic.*
+artifacts/
+autotest.net/
+backup*.*
+backup*/
+basque.*
+belarusian.*
+bg.*
+bin*/
+bld/
+bn.*
+bower_components###/
+build/
+buildlog.*
+bulgarian.*
+bundleartifacts/
+burmese.*
+ca.*
+cache/
+callgrind.out.*
+catalan.*
+chinese*.*
+clientbin/
+cmakecache.txt
+CMakeLists.txt.user
+cmakelists.txt.user
+CMakeSettings.json
+code cache/
+core
+cra-server-ex.graffle
+croatian.*
+cs.*
+csx/
+czech.*
+da.*
+danish.*
+data/extensions/
+data/savebackup/
+data/user-data/User/*
+de_de.*
+de.*
+debug/
+debugps/
+debugpublic/
+default.rdp;
+dlldata.c
+docproject/buildhelp/
+docproject/help/*.hhc
+docproject/help/*.hhk
+docproject/help/*.hhp
+docproject/help/*.hxc
+docproject/help/*.hxt
+docproject/help/html
+docproject/help/html2
+dutch.*
+ecf/
+el.*
+electron framework.framework/electron framework
+EncFiltLog.menc
+es_la.*
+es.*
+estonian.*
+et.*
+eu.*
+express/
+fa.*
+fakesassemblies/
+fi.*
+fil.*
+finnish.*
+Folder.jpg
+fr_??.*
+fr.*
+french*.*
+galician.*
+generated_code/
+german.*
+gl.*
+gpl.*
+greek.*
+gu.*
+he.*
+hebrew.*
+hi.*
+hindi*.*
+history.txt
+hk_cn.*
+hr.*
+hu.*
+hungarian.*
+icelandic.*
+icon.ico
+id.*
+ie cache;
+ietnamese*.*
+india*.*
+indonesian.*
+ipch/
+it_it.*
+it.*
+italian.*
+ja.*
+japanese.*
+jp_jp.*
+kn.*
+ko_kr.*
+ko.*
+korean.*
+latvian.*
+lerna-debug.log
+lgpl-2.1.*
+lib*/
+lib/modules
+lithuanian.*
+log/
+lt.*
+lv.*
+macedonian.*
+maintenancetool.dat
+makefile*
+malay.*
+malayalam.*
+ml.*
+moc_*.cpp
+mr.*
+ncrunchtemp_*
+news.*
+nl_nl.*
+nl.*
+no.*
+node_modules/
+norwegian.*
+npm-debug.log*
+obj/
+orleans.codegen.cs
+package.storeassociation.xml
+paket-files/
+perf.data*
+pl_pl.*
+pl.*
+pluginst.inf
+polish.*
+portuguese*.*
+PPInfo.xml
+project.fragment.lock.json
+project.lock.json
+pt_??.*
+pt-??.*
+pt.*
+publish/
+qrc_*.cpp
+qtgui.index
+rcf/
+release*/
+ro.*
+romanian.*
+ru_ru.*
+ru.*
+russian.*
+serbian.*
+signs.txt
+sk.*
+sl.*
+slovak.*
+slovenian.*
+spanish*.*
+sr.*
+sv.*
+swedish.*
+System Volume Information
+ta.*
+tags
+tajik.*
+tamil*.*
+te.*
+template/src/__tests__/__snapshots__/
+testresult.xml
+testresult*/
+th.*
+thai.*
+thumbs.db
+todo.*
+tr.*
+turkish.*
+tw_cn.*
+ui_*.h
+uk.*
+ukrainian.*
+unins*.*
+upgradelog*.*
+user-data/cache/
+UserDB.txt
+uzbek.*
+vi.*
+welsh.*
+winamp_cache_0001.xml
+wwwroot###/
+x64/
+x86/
+yarn-debug.log*
+yarn-error.log*
+yarn.lock
+zh_??.*
+zh.*
+
+
+#!--- !DN!
+*.key
+*.publishproj
+*.pubxml###
+*.pw
+*.up
+mailbox.ini
+publishscripts/
+tccloud.ini
+tcwebdav.ini 
+wcx_ftp.ini###
+
+#!--- specific
